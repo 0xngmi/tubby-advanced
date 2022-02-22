@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>BE VERY CAREFUL WITH SCAMS!</h2>
+<p>
+    Don't mint your tubby on any website other than https://tubbycats.xyz/ and verify everything against the information on the #links channel in tubby discord.<br />
+    If you get scammed there's nothing we can do, so please be very careful.<br />
+    This is a page for advanced users that want to mint directly through etherscan.<br />
+    Remember that you can only claim 1 tubby per account. If you have already claimed trying to claim again will result in a failed tx.<br />
+</p>
+
+<h1>Tubby manual minting instructions</h1>
+
+<p>
+    1. Input your address into the Address box below and click on "Get Proof"<br>
+    2. Once you have the proof, go to the contract (you can find the etherscan link in the #links channel on tubby discord), and call the mint() function.<br>
+    3.On the first text box you should fill "0.1" (mint cost), and in the second text box you should put the proof that you copied from below (it should look like this: [0x000000000000000000000000719ebce67fb7f9a925a4bbec7bf4af63828dc0b9,{...},0x8f4cf0463478eb50dd589bb2f73776b639f77c4697f0a050fe9e8dbfb432408b])
+</p>
+
+Address: <input id="address"></input><button onclick="getInstructions()">Get proof</button><br />
+
+<textarea id="proof" style="width:500px;height:300px">
+</textarea>
+
+<script src="./script.js"></script>
+</body>
+</html>
